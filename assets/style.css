@@ -1,4 +1,8 @@
 /* Design for mobile first. Plus all the elements that have the same styling applied throughout the various screen sizes */
+/* * {
+    border: 1px solid red;
+} */
+
 body {
     font-family: sans-serif;
     font-size: 16px;
@@ -15,6 +19,24 @@ input {
     padding: .5rem;
     border: none;
     border-radius: 1rem;
+}
+
+ul {
+    display: flex;
+    padding-left: 0;
+}
+
+#hide {
+    display: none;
+}
+
+.search-history-item {
+    color: black;
+    background-color: white;
+    list-style: none;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    margin-right: .5rem;
 }
 
 /* This change tge layout significantly. The page title is displayed on the right and there are three columns for the forecast */

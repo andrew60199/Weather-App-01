@@ -1,6 +1,8 @@
 const citySearched = document.getElementById('search');
 const historyList = document.getElementById('history');
 
+let weatherObject = {};
+
 const search = (event) => {
     
     if (citySearched.value === '') {
@@ -39,6 +41,13 @@ const createSearchHistoryElement = () => {
     newListItem.id = citySearched.value;
     newListItem.className = 'search-history-item';
 
+
+
+
+    // weatherObject += citySearched.value
+    // let weatherObjectStringed = JSON.stringify(weatherObject)
+    // localStorage.setItem("searchHistory", weatherObjectStringed )
+
     // Reverse list order
     oppositeToAppend(historyList, newListItem)
 
@@ -51,10 +60,10 @@ const oppositeToAppend = (parent, toInsert) => {
 }
 
 const loadSearchHistory = () => {
-
+//     weatherObject = localStorage.getItem(weatherObject)
 }
 
-function init() {
+const init = () => {
 
     // Get search history from local storage
     loadSearchHistory();

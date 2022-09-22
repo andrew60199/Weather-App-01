@@ -26,6 +26,16 @@ ul {
     padding-left: 0;
 }
 
+.padding {
+    margin-top: 1rem;
+}
+
+#prompt {
+    background-color: gainsboro;
+    margin: 1rem;
+    padding: 1rem;
+}
+
 #hide {
     display: none;
 }

@@ -49,7 +49,10 @@ ul {
     margin-right: .5rem;
 }
 
-/* This change tge layout significantly. The page title is displayed on the right and there are three columns for the forecast */
+.content {
+    margin: 1rem;
+}
+
 @media screen and (min-width: 769px) {
 
     header {
@@ -67,13 +70,9 @@ ul {
         right: 2rem;
     }
 
-}
-
-/* This will be used for formatting the forecast into 6 columns */
-@media screen and (min-width: 1200px) {
-
-    header {
-        background-color: magenta;
+    #forecast {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     }
-
 }

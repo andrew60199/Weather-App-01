@@ -114,14 +114,12 @@ const fetchWeather = () => {
 
 // https://www.unixtimestamp.com/index.php use this to understand the actual time not what I it looked like
 const showWeather = (data) => {
-    console.log(data)
+    // console.log(data)
 
     let currentDiv = document.getElementById('currentWeather');
     let forecastDiv = document.getElementById('forecast');
 
     const currentTime = data.list[0]
-
-    console.log(currentTime)
 
     // console.log(currentTime)
     // Giving us the whole array
@@ -144,7 +142,7 @@ const showWeather = (data) => {
 
         if (day.dt_txt.endsWith("03:00:00")) {
 
-            console.log(day)
+            // console.log(day)
 
             let dt = new Date(day.dt * 1000)
             return `<div class="col">
